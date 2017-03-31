@@ -112,21 +112,21 @@ function draw() {
   }
 
   if (score > lastScore) {
-    if (score === 5) {
+    if (score === 50) {
       addEnemy();
       basicEnemy.speed();
       enemies[i].speed();
       hud.levelUpdate();
       hud.displayLevel2();
 
-    } else if (score === 10) {
+    } else if (score === 100) {
       addEnemy();
       basicEnemy.speed();
       enemies[i].speed();
       hud.levelUpdate();
       hud.displayLevel3();
 
-    } else if (score === 15) {
+    } else if (score === 150) {
       addEnemy();
       basicEnemy.speed();
       enemies[i].speed();
