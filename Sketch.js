@@ -32,10 +32,6 @@ function resetSketch() {
 
   for (var i = 0; i < 1; i++) {
     enemies[i] = new BasicEnemy();
-    /*if (score >= 0) {
-      enemies.splice(i, enemies.length);
-      console.log(enemies);
-    }*/
   }
 }
 
