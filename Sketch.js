@@ -16,12 +16,12 @@ function setup() {
   frameRate(10);
 
   var button = createButton("Click to Play!");
-  button.mousePressed(resetSketch);
+  button.mousePressed(resetGame);
 
 } // ***** end of setup function ****** //
 
 
-function resetSketch() {
+function resetGame() {
   snake = new Snake();
   basicEnemy = new BasicEnemy();
   hud = new HUD();
