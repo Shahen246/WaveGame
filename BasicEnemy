@@ -1,5 +1,5 @@
-var windowWidth = 580;
-var windowHeight = 480;
+var Width = 580;
+var Height = 480;
 
 function BasicEnemy() {
   this.x = random(900);
@@ -26,11 +26,11 @@ function BasicEnemy() {
    this.y = this.y + this.velY;
 
    //bounce enemy inside window
-   if (this.x <= 0 || this.x >= windowWidth){
+   if (this.x <= 0 || this.x >= Width){
      this.velX *= -1;
    }
 
-   if (this.y <= 0 || this.y >= windowHeight){
+   if (this.y <= 0 || this.y >= Height){
      this.velY *= -1;
    }
 
