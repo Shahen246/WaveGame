@@ -14,7 +14,7 @@ function BasicEnemy() {
 
   this.intersects = function (pos) {
     var d = dist(this.x, this.y, pos.x, pos.y);
-      if (d < 17){
+      if (d < 25){
         return true;
       } else {
         return false;
