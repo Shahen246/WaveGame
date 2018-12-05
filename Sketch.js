@@ -1,4 +1,4 @@
-var snake;
+var player;
 var food;
 var basicEnemy;
 var hud;
@@ -22,7 +22,7 @@ function setup() {
 
 
 function resetGame() {
-  snake = new Snake();
+  player = new Player();
   basicEnemy = new BasicEnemy();
   hud = new HUD();
   foodLocation();
@@ -50,13 +50,13 @@ function gameOverText() {
 
 function ifDead() {
   if (keyCode === UP_ARROW){
-    snake.dir();
+    player.dir();
   } else if (keyCode === DOWN_ARROW) {
-    snake.dir();
+    player.dir();
   } else if (keyCode === LEFT_ARROW) {
-    snake.dir();
+    player.dir();
   } else if (keyCode === RIGHT_ARROW) {
-    snake.dir();
+    player.dir();
   }
 }
 
@@ -69,8 +69,8 @@ function foodLocation() {
 
 function draw() {
   background(51);
-  snake.update();
-  snake.show();
+  player.update();
+  player.show();
 
   //food
   fill(0, 200, 0);
@@ -93,7 +93,7 @@ function draw() {
       hud.changeColor();
     }
 
-    if (snake.hits(basicEnemy)) {
+    if (player.hits(basicEnemy)) {
       hud.changeColor();
     }
   }
